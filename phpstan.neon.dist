@@ -1,0 +1,17 @@
+includes:
+	# @see https://github.com/phpstan/phpstan-src/blob/b9f62d63f2deaa0a5e97f51073e41a422c48aa01/conf/bleedingEdge.neon
+	- phar://phpstan.phar/conf/bleedingEdge.neon
+	- vendor/szepeviktor/phpstan-wordpress/extension.neon
+parameters:
+	level: 9
+	paths:
+		- syntax-highlighting-code-block.php
+		- language-names.php
+		- uninstall.php
+		- inc/
+	stubFiles:
+		# https://github.com/scrivo/highlight.php/pull/107
+		- tests/phpstan/HighlightAutoloader.stub
+	dynamicConstantNames:
+		- Syntax_Highlighting_Code_Block\DEVELOPMENT_MODE
+	treatPhpDocTypesAsCertain: false
