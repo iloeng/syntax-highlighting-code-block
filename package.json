@@ -29,7 +29,7 @@
     "@wordpress/hooks": "4.28.0",
     "@wordpress/i18n": "6.1.0",
     "@wordpress/scripts": "30.21.0",
-    "eslint": "8.57.1",
+    "eslint": "9.35.0",
     "grunt": "1.6.1",
     "grunt-wp-deploy": "2.1.2",
     "highlight.js": "git+https://github.com/highlightjs/highlight.js.git#9.18.1",
